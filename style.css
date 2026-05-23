@@ -8,3 +8,5 @@
     font-family: 'Roboto', sans-serif;
     src: url(assets/fonts/roboto.ttf);
 }
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
