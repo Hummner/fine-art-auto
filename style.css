@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(assets/fonts/roboto.ttf);
+}
