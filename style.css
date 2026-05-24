@@ -1,12 +1,44 @@
+@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/roboto.ttf);
+}
+
+@font-face {
+    font-family: 'League';
+    src: url(assets/fonts/league.ttf);
+}
+
 * {
-    margin: 0;
+    margin: 0 ;
     box-sizing: border-box;
     font-family: 'Roboto';
 }
 
-@font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url(assets/fonts/roboto.ttf);
+body {
+    background: radial-gradient(rgb(30, 30, 30), rgb(15, 15, 15)) no-repeat;
+    min-height: 100vh;
 }
 
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+.hero-img {
+    padding: 0;
+    position: relative;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'League';
+    font-size: 30px;
+}
+
+
+

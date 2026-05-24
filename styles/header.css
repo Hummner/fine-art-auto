@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 64px;
+}
+
+nav {
+    display: flex;
+    gap: 64px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
