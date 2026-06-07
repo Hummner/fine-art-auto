@@ -10,18 +10,33 @@
     src: url(assets/fonts/league.ttf);
 }
 
+:root {
+    --bg: #10131b;
+    --header-bg: #0a0c11;
+    --red: #892216;
+    --mustard: #FF914D;
+}
+
 * {
-    margin: 0 ;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
 }
 
 body {
-    background: radial-gradient(rgb(30, 30, 30), rgb(15, 15, 15)) no-repeat;
+    /* background: radial-gradient(rgb(30, 30, 30), rgb(15, 15, 15)) no-repeat; */
+    background-color: var(--bg);
     min-height: 100vh;
 }
 
-.hero-img {
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .hero-img {
     padding: 0;
     position: relative;
 }
@@ -30,15 +45,71 @@ body {
     width: 100%;
     height: 500px;
     object-fit: cover;
+} */
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--header-bg);
+    height: 100px;
+}
+
+.nav-active {
+    border-bottom: 2px solid var(--red);
+}
+
+#hero {
+    padding-top: 100px !important;
+    padding-bottom: 0 !important;
+    max-width: unset !important;
+    width: 100% !important;
+}
+
+
+.hero {
+    height: calc(100vh - 100px);
+
+    background-image: url(/assets/img/hero.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.hero-text {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-text h1 {
+    margin-bottom: 40px;
+}
+
+.hero-button button {
+    background-color: var(--red);
+    color: white;
+}
+
+.hero-button button:hover {
+    background-color: var(--mustard);
 }
 
 section {
     padding: 48px 0;
+    max-width: 1920px;
 }
 
 .icon-section {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .icon-section img {
@@ -60,5 +131,9 @@ section {
     opacity: 1;
 }
 
+@media (max-width: 720px) {
+    .hero {
 
-
+        background-image: url(/assets/img/hero_small.png);
+    }
+}
